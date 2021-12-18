@@ -1,0 +1,177 @@
+/* Responses */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	color: black;
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+	line-height: 1.4;
+	font-size: 16px;
+	margin: 0.25em;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+/* Typography */
+
+h1 {
+	font-size: 3em;
+	font-weight: 700;
+	margin: 0 0 1em 0;
+	opacity: 1;
+	color: #feb2c7;
+	text-align: left;
+}
+
+h2 {
+	size: 500;
+	color:#feb2c7;
+	text-align: left;
+}
+
+h3 {
+	size: 200;
+	color: #ffffff;
+	text-align: center
+	;
+}
+
+p {
+	font-size: 1.6em;
+	margin: 0 0 1em 0;
+	padding-bottom: 1px;
+	text-align: left;
+	color: #ffcd40;
+}
+
+h4 {
+	font-size: 1.6em;
+	margin: 0 0 1em 0;
+	padding-bottom: 1px;
+	text-align: left;
+	color: #ffcd40;
+	padding-bottom: 4.5em;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+	transition: all 0.3s;
+}
+
+a:hover {
+	color: #ff9800;
+	text-decoration: none;
+}
+
+.button {
+	border: 1px solid black;
+	border-radius: 2em;
+	background-color: #FF5D71;
+	padding: 0.25em 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 0 1em 0;
+}
+
+.button:hover {
+	background-color: #FF5D71;
+	color: white;
+	transition-duration: 0.6s;
+}
+
+.img1 {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+  	border: 5px solid;
+  	border-color: #FF5D71;
+}
+
+.img-link {
+	width: 300px;
+	height: 300px;
+  	border: 5px solid;
+  	border-color:#feb2c7;
+  	opacity: 0.55;
+  	transition-duration: 0.6s;
+
+  }
+
+.img-link:hover {
+	opacity: 1.0;
+	transition-duration: 0.6s;
+}
+
+
+
+
+/* Grid */
+
+.grid {
+	display: grid;
+	grid-template-columns: 100%;
+	align-self: center;
+	align-content: center;
+	min-height: 100vh;
+}
+
+.items {
+	padding: 0.5em;
+}
+
+@media (min-width: 40em) {
+	.grid {
+		grid-template-rows: 10% 85% 5%;
+	}
+}
+
+
+/* IMAGE TEXT TITLES*/
+/* I wanted the images to go next to eachother in a row across the screen and they did that at first, 
+but when I appled the container they just ended up going in a colum+ down the page and I cant figure out how to get it
+to sit in a row again without losing the text indicating what each image links to (once I get my entire portfolio sorted over the break)
+because anytime I set up a new grid in it, it all moves separately and all shifts to the left where I dont want it. 
+Super frustrating!! */
+
+.container {
+	grid-template-rows: 25% 25% 25% 25%;
+  position: relative;
+  text-align: center;
+  color: white;
+  border-color: #c6c6c6;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.8em;
+}
+
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FF5D71;
+  color: #ffffff;
+  align-content: right;
+}
